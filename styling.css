@@ -1,16 +1,6 @@
-/*=transition($transition-property, $transition-time, $method)
-	-webkit-transition: $transition-property $transition-time $method
-	-moz-transition: $transition-property $transition-time $method
-	transition: $transition-property $transition-time $method*/
-
-/**
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
-		box-sizing: border-box*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 header
 {	background-color: royalblue;
@@ -61,14 +51,16 @@ a
 
 }
 img{
-	max-width: 100%;
+
+	/*max-width: 100%;
 	height: auto;
 	width: 100%;
 	padding: 0;
-	margin: 10;
-	border-radius: 20px;
+	margin: 10;*/
+	border-radius: 20px;*/
 /*	hover: rounded-full;*/
 }
+
 
 
 p{
@@ -102,38 +94,6 @@ a{
 	padding: 0;
 /*	line-height: 0;*/
 }
-&:before
-position: absolute
-width: 32px
-height: 32px
-top: 40%
-left: 50%
-margin: -14px 0 0 -16px
-
-content: ''
-opacity: 0
-z-index: 1
-@include transition(all, 0.3s, linear)
-
-&:hover:before
-top: 50%
-opacity: 1
-
-&:after
-position: absolute
-width: 100%
-top: 0
-bottom: 0
-background: rgba(0, 0, 0, 0.3)
-content: ''
-opacity: 0
-@include transition(all, 0.3s, linear)
-
-
-&:hover:after
-opacity: 1
-
-}
 
 
 
@@ -163,21 +123,6 @@ opacity: 1
 		overflow: auto;
 }
 
-	>*
-		opacity: 0
-		+transition(all, 0.5s, linear)
-
-	&item_open
-		visibility: visible
-		-webkit-transform: translateY(0%)
-		transform: translateY(0%)
-		+transition(all, 0.4s, ease-in-out)
-
-	> *
-		opacity: 1
-		-webkit-transition-delay: 0.5s
-		transition-delay: 0.5s
-
 
 
 
@@ -190,11 +135,11 @@ opacity: 1
 		opacity: 1;
 		z-index: 1004;
 	}
-	+transition(all, 0.1s, ease-in-out)
+/*	+transition(all, 0.1s, ease-in-out)
 
 	item_open &
 		opacity: 1
 		top: 0px
-		+transition(all, 0.3s, ease-in-out)
+		+transition(all, 0.3s, ease-in-out)*/
 
 
