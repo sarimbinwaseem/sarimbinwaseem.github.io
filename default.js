@@ -7,6 +7,16 @@ function ac(p, c) {
   return p;
 }
 
+function getFilenameAndExtension(pathfilename){
+
+  var filenameextension = pathfilename.replace(/^.*[\\\/]/, '');
+  var filename = filenameextension.substring(0, filenameextension.lastIndexOf('.'));
+  var ext = filenameextension.split('.').pop();
+  
+  return [filename, ext];
+
+}
+
 $(document).ready(function(){
 
     images = [
@@ -18,9 +28,12 @@ $(document).ready(function(){
         "https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png"];
     
     console.log(images[i]);
+    for (var i = images.length - 1; i >= 0; i--) {
+        console.log(getFilenameAndExtension(images[i]));
+    }
     
     let mainWrapper = document.getElementById("imagesdiv");
-    let imageclass = "rounded-full border-2 hover:border-rose-500";
+    let imageclass = "border-2 hover:border-rose-500";
 
     // var link = create("a", {
     //     className: "scoreboard-video-outer-link",
