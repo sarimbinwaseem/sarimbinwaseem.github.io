@@ -17,14 +17,12 @@ function getFilenameAndExtension(pathfilename){
 
 }
 
-let videos = ["../TOD/todinaction.mp4"];
+// let videos = ["../TOD/todinaction.mp4"];
 
 let images = [
-    "../TOD/1.png",
-    "../TOD/2.png",
-    "../TOD/3.png",
-    "../TOD/TODcode1.png",
-    "../TOD/TODcode2.png"
+    "../OFM/1.png",
+    "../OFM/2.png",
+    "../OFM/3.png"
     ];
 
 console.log(images[i]);
@@ -44,16 +42,16 @@ $(document).ready(function(){
     //     url: "google.com"
     // });
 
-    for (var i = 0; i < videos.length; i++) {
+    // for (var i = 0; i < videos.length; i++) {
 
-        var wholediv = create("div", {id: "wholediv"});
-        var link = create("a", {href: videos[i]});
-        var thmbnl = create("video", {className: videoclass, 
-            src: videos[i], alt: "Video",type: "video/mp4"});
+    //     var wholediv = create("div", {id: "wholediv"});
+    //     var link = create("a", {href: videos[i]});
+    //     var thmbnl = create("video", {className: videoclass, 
+    //         src: videos[i], alt: "Video",type: "video/mp4"});
 
-        ac(mainWrapper, ac(wholediv, ac(link, thmbnl)));
+    //     ac(mainWrapper, ac(wholediv, ac(link, thmbnl)));
                 
-            }
+    //         }
 
     for (var i = 0; i < images.length; i++) {
 
