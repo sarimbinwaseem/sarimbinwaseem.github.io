@@ -20,12 +20,12 @@ function getFilenameAndExtension(pathfilename){
 $(document).ready(function(){
 
     images = [
-        "https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png",
-        "https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png",
-        "https://cdn.dribbble.com/userupload/9184753/file/original-72edcb64118637b179fff0bd947e84b9.png",
-        "https://cdn.dribbble.com/userupload/9744620/file/original-989de0234b15140bce4fdef49a1c5e10.png",
-        "https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg",
-        "https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png"
+        "TOD/TOD-AUTOMATICO.png",
+        "OFM/OFM-cover.png",
+        // "https://cdn.dribbble.com/userupload/9184753/file/original-72edcb64118637b179fff0bd947e84b9.png",
+        // "https://cdn.dribbble.com/userupload/9744620/file/original-989de0234b15140bce4fdef49a1c5e10.png",
+        // "https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg",
+        // "https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png"
         ];
 
     links = [
